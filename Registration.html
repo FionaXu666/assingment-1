@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>  
+    <div class="content" >
+        <div class="content_body">
+            <h1 class="content_header" >Sign Up</h1>
+            <h2 class="info" >Your basic info</h2>
+            <form action="">
+                <!-- First Name (text input field) -->
+        
+                <label class="info_name" for="firstName">First Name</label>
+                <input class="info_input" type="text" id="firstName" name="first_name" maxlength="50">
+                
+                <!-- Last Name (text input field) -->
+                <label class="info_name" for="lastName">Last Name</label>
+                <input class="info_input" type="text" id="lastName" name="last_name" maxlength="50">
+                <!-- Email Address (appropriate input type) -->
+                <label class="info_name" for="emailAddress">Email Address</label>
+                <input class="info_input" type="email" id="emailAddress" name="email">
+                <!-- Password (password input field with appropriate attributes to ensure security) -->
+                <label class="info_name" for="pwd">Password</label>
+                <input class="info_input" type="password" id="pwd" minlength="8"  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$" title="Password must be at least 8 characters and include uppercase, lowercase, number, and special character." required><br>
+                <!-- Confirm Password (password input field) -->
+                <label class="info_name" for="pwdConfm">Confirm Password</label>
+                <input class="info_input" type="password" id="pwdConfm" name="confirm_password" required>
+                <h2 class="info">Other ditails</h2>
+                
+                <!-- Date of Birth -->
+                <label class="info_name" for="dob">Birth Date</label>
+                <input class="info_input" type="date" id="dob" name="dete_of_birth">
+                <!-- Gender (radio buttons: Male/Female/Other) -->
+                <div class="info_name">Gender</div> 
+                <input id="nan" type="radio" name="gender" value="male">
+                <label for="nan">Male</label>
+                <input id="nv" type="radio" name="gender" value="female" />
+                <label for="nv">Female</label>
+                <input id="qt" type="radio" name="gender" value="other" />
+                <label for="qt">Other</label> 
+                <!-- About Me (textarea) -->
+                <label class="info_name" for="about">About Me</label>
+                <textarea class="info_input" id="about" name="about_me" rows="5" maxlength="1000"></textarea> 
+                <!-- Choose Your Profession (dropdown list with options like "Web Development", "Data Analytics", "UI/UX Design", etc.) -->
+                <label class="info_name" for="profession">Choose Your Profession</label>
+                <select class="info_input" id="profession" name="profession" required>
+                    <option value="" selected disabled>-- Please select --</option>
+                    <option value="web-dev">Web Development</option>
+                    <option value="data-analytics">Data Analytics</option>
+                    <option value="ui-ux">UI/UX Design</option>
+                    <option value="product-mgmt">Product Management</option>
+                    <option value="qa-testing">Testing</option>
+                    <option value="other">Other</option>
+                </select>
+                <br>
+                <input class="content_checkbox" type="checkbox" id="agree" name="agree" required />
+                <label class="content_checkbox_name" for="agree">I'm accepting Terms and Conditions </label>
+
+                <button class="content_button" >Sign Up</button>
+            </form>
+        </div>
+    </div>
+        
+    
+</body>
+</html>

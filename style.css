@@ -1,0 +1,83 @@
+.content {
+    display: flex;
+    justify-content: center;
+    
+    /* 底色 */
+    .content_body {
+        background: #ecf7fc;
+        padding: 20px;
+        width: 50%;
+    }
+    /* 一级标题 */
+    .content_header {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    /* 二级标题样式 */
+    .info {
+        text-align: left;
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        &::before {
+            display: inline-block;
+            content: "";
+            width: 10px;
+            height: 10px;
+            margin-right: 8px;
+            background-color: #43f9ff; /* 圆点颜色 */
+            border-radius: 8px;
+        }
+    }
+    /* 表单统一样式 */
+    .info_name {
+        display: block;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .info_input {
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        background: #cae4fa;
+        border-color: #a5bfd8;
+        border-width: 0;
+        margin-top: 6px;
+        
+    }
+    /* About Me输入框样式 */
+    textarea.info_input {
+        height: 100px;  
+        resize: none; 
+    }
+
+    /* checkbox样式 */
+    .content_checkbox {
+        width: 12px;   
+        height: 12px;
+        margin-top: 60px;
+    }
+    .content_checkbox_name {
+        font-size: 14px;
+    }
+    /* 提交按钮样式 */
+    .content_button {
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        background: #34a851;
+        border-color: #34a851;
+        border-width: 0;
+        color: white;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+    .content_button:hover {
+    background: #2e9446; /* hover效果，鼠标移上去变深绿色 */
+}
+}
